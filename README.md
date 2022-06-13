@@ -7,7 +7,7 @@
 | email              | string              | null: false, unique: true |メールアドレス
 | encrypted_password | string              | null: false               |パスワード
 | nickname           | string              | null: false               |ニックネーム
-| experience_id      | string              | null: false               |競技歴
+| experience_id      | string              | null: false               |バド歴
 | profile            | text                | null: false               |自己紹介
 
 ### Association
