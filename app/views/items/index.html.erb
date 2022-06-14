@@ -1,12 +1,11 @@
 <main class="main">
   <div class="inner">
-     <%# <% if user_signed_in? %>  
+      <% if user_signed_in? %>  
       <div class="greeting">
-        ようこそ、
-         <%# <%= link_to "#{current_user.name}さんの", user_path(current_user), class: :greeting__link%> 
+          <%= link_to "#{current_user.name}さん", user_path(current_user), class: :greeting__link%> 
         あなたのお気に入りのバド商品を紹介してね！
       </div>
-     <%# <% end %>  
+      <% end %>  
     <div class="card__wrapper">
       <%# <%= render partial: 'prototype', collection: @prototypes %> 
     </div>
