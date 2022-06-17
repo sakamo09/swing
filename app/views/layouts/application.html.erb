@@ -15,12 +15,11 @@
       <div class="inner">
         <div class="nav">
           <div class="nav__left">
-             <%= link_to image_tag("badlogo.jpeg", class: :logo), root_path %> 
           </div>
            <% if user_signed_in? %> 
             <div class="nav__right">
                 <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: :nav__logout %>
-                <%# <%= link_to "New Proto",hoge, class: :nav__btn %>  
+               
             </div>
            <% else %> 
             <div class="nav__right">
