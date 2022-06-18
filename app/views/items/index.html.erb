@@ -2,6 +2,7 @@
   <div class="inner">
       <% if user_signed_in? %>  
       <div class="greeting">
+       こんにちは、
           <%= link_to "#{current_user.name}さん", user_path(current_user), class: :greeting__link%> 
         あなたのお気に入りのバド商品を紹介してね！
       </div>
