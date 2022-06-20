@@ -20,9 +20,11 @@
 
 | Column                              | Type       | Options                        |
 |-------------------------------------|------------|--------------------------------|
-| genre_id                            | string     | null: false                    |ジャンル
-| merit                               | string     | null: false                    |おすすめポイント
-| user                                | references | null: false, foreign_key: true |
+| genre_id                            | string     | null: false                    |ジャンル（ラケット、シューズ、ガッド、ゲームシャツ）
+| maker_id                            | string     | null: false                    |メーカー
+| price                               | string     | null: false                    |価格
+| merit                               | text     | null: false                    |あなたのおすすめポイント
+| user                                | references | null: false, foreign_key: true |外部キー
 
 ### Association
 
@@ -35,8 +37,8 @@
 | Column      | Type       | Options                        |
 |-------------|------------|--------------------------------|
 | content     | text       | null: false                    |コメント
-| item        | references | null: false, foreign_key: true |
-| user        | references | null: false, foreign_key: true |
+| item        | references | null: false, foreign_key: true |外部キー
+| user        | references | null: false, foreign_key: true |外部キー
 
 ### Association
 

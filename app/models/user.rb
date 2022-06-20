@@ -7,4 +7,7 @@ class User < ApplicationRecord
   validates :nickname, presence: true
   validates :experience_id, presence: true
   validates :profile, presence: true
+
+  has_many :items
+  has_many :comments
 end
