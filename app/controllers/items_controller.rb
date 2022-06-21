@@ -1,12 +1,12 @@
 class ItemsController < ApplicationController
-  before_action :set_prototype, except: [:index, :new, :create]
+  before_action :set_item, except: [:index, :new, :create]
   before_action :authenticate_user!, except: [:index, :show]
   before_action :contributor_confirmation, only: [:edit, :update, :destroy]
   
   
   
   def index
-    @items = Item.Includes(:user)
+    @items = Item.includes(:user)
   end
 
   def new
@@ -15,7 +15,7 @@ class ItemsController < ApplicationController
 
   def create
     @item = Item.new(item_params)
-    if @prototype.save
+    if @pitem.save
       redirect_to root_path
     else
       render :new
