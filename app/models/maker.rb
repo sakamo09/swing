@@ -10,4 +10,6 @@ class Maker < ActiveHash::Base
     { id: 7, name: 'GOSEN' },
     { id: 8, name: 'Babolat' }
   ]
+  include ActiveHash::Associations
+  has_many :items
   end

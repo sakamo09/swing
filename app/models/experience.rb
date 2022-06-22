@@ -7,4 +7,6 @@ class Experience < ActiveHash::Base
     { id: 4, name: '3年〜5年' },
     { id: 5, name: '5年以上' }
   ]
+  include ActiveHash::Associations
+  has_many :users
   end

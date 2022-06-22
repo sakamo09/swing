@@ -9,4 +9,6 @@ class Genre < ActiveHash::Base
     { id: 6, name: 'ゲームシャツ' },
     { id: 7, name: 'ラケットバック' }
   ]
+  include ActiveHash::Associations
+  has_many :items
   end
