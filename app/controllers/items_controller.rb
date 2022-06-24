@@ -15,7 +15,7 @@ class ItemsController < ApplicationController
 
   def create
     @item = Item.new(item_params)
-    if @pitem.save
+    if @item.save
       redirect_to root_path
     else
       render :new
@@ -53,7 +53,7 @@ class ItemsController < ApplicationController
     params.require(:item).permit(:genre_id, :maker_id, :price, :merit, :image).merge(user_id: current_user.id)
   end
 
-  def set_prototype
+  def set_item
     @item = Item.find(params[:id])
   end
 

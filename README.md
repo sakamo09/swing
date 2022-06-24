@@ -9,14 +9,15 @@ URL
 https://swing-37856.herokuapp.com/
 
 テスト用アカウント
-
-
 Basic認証ID admin
 Basic認証 2222
 
 利用方法
 
+
 アプリケーションを作成した背景
+社会人からバドミントンを初めた人は、どんな商品を選べば分からないと思うので
+色んな人のsおすすめをみられた方が楽しいと思ったため。
 
 
 
@@ -52,10 +53,10 @@ Basic認証 2222
 
 | Column                              | Type       | Options                        |
 |-------------------------------------|------------|--------------------------------|
-| genre_id                            | string     | null: false                    |ジャンル（ラケット、シューズ、ガッド、ゲームシャツ）
-| maker_id                            | string     | null: false                    |メーカー
-| price                               | string     | null: false                    |価格
-| merit                               | text     | null: false                    |あなたのおすすめポイント
+| genre_id                            | string     | null: false                    |
+| maker_id                            | string     | null: false                    |
+| price                               | string     | null: false                    |
+| merit                               | text       | null: false                    |
 | user                                | references | null: false, foreign_key: true |外部キー
 
 ### Association
