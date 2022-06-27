@@ -1,5 +1,4 @@
 class Experience < ActiveHash::Base
-
   self.data = [
     { id: 1, name: '---' },
     { id: 2, name: '1年未満' },
@@ -9,4 +8,4 @@ class Experience < ActiveHash::Base
   ]
   include ActiveHash::Associations
   has_many :users
-  end
+end
