@@ -26,6 +26,7 @@ https://swing-37856.herokuapp.com/
 
 
 投稿機能
+[![Image from Gyazo](https://i.gyazo.com/fe221c8fbf47bd4f557259da3e8b6972.gif)](https://gyazo.com/fe221c8fbf47bd4f557259da3e8b6972)
 
 
 
